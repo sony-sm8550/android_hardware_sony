@@ -1,0 +1,14 @@
+/*
+ * Copyright (C) 2023 The LineageOS Project
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package vendor.somc.hardware.ifaa@1.0;
+
+interface IIFAAManagerService {
+    ifaa_process_cmd(vec<int8_t> data) generates (int32_t retval, vec<int8_t> text);
+    ifaa_get_idlist_cmd() generates (int32_t retval, vec<int32_t> text);
+    get_device_id_model() generates (int32_t retval, string text);
+    is_ifaa_enable_device() generates (bool ret);
+};

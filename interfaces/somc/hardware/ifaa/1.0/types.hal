@@ -1,0 +1,17 @@
+/*
+ * Copyright (C) 2023 The LineageOS Project
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+package vendor.somc.hardware.ifaa@1.0;
+
+struct ifaa_fpIdList {
+    int32_t single_id_len;
+    int32_t fid;
+};
+
+enum ifaa_cmd_result: uint32_t {
+    IFAA_ERROR = -1,
+    IFAA_SUCCESS = 0,
+};
