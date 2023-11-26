@@ -8,8 +8,8 @@ package org.ifaa.aidl.manager;
 
 interface IfaaManagerService {
     int getSupportBIOTypes();
-    int startBIOManager(int authType);
     String getDeviceModel();
+    int startBIOManager(int authType);
     byte[] processCmd(inout byte[] param);
     int getVersion();
     String getExtInfo(int authType, String keyExtInfo);

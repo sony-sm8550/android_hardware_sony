@@ -17,7 +17,7 @@ android_app {
 
     static_libs: [
         "android.hidl.base-V1.0-java",
-        "vendor.xiaomi.hardware.mlipay-V1.1-java",
+        "vendor.somc.hardware.ifaa-V1.0-java",
     ],
 
     certificate: "platform",
